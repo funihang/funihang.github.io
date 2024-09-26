@@ -102,7 +102,7 @@ header h1 {
     width: 200px; /* Increased size for better visibility */
     height: 200px;
     object-fit: cover;
-    border: 4px solid #333; /* Bolder border for better visibility */
+    border: 2px solid #333; /* Bolder border for better visibility */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow to make it pop */
 }
 
