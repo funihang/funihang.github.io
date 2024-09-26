@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: fixed; /* Fix the header at the top */
+    top: 0; /* Align to the top of the viewport */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 8px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.section {
+    padding: 0rem 0;
+}
+
+h1, h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+header h1 {
+    font-size: 2rem; /* Keep the large size */
+    color: #ffffff; /* Bright color */
+    font-weight: bold;
+    margin: 0; /* Remove any default margin */
+}
+
+
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Pushes your name to the left and nav to the right */
+    align-items: center; /* Vertically centers the content */
+}
+
+/* About Section Layout */
+.about-section {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 12rem; /* Ensure content starts below the fixed header */
+}
+
+/* Avatar Style */
+.avatar-container {
+    flex-shrink: 0; /* Prevents image from shrinking in size */
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 200px; /* Increased size for better visibility */
+    height: 200px;
+    object-fit: cover;
+    border: 4px solid #333; /* Bolder border for better visibility */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow to make it pop */
+}
+
+.about-text {
+    flex-grow: 1; /* Ensures the text takes the remaining space */
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.custom-bullets {
+    list-style-type: square; /* Options: disc, circle, square, none */
+    padding-left: 25px;
+}
+
+
+.back-to-top {
+    display: none; /* Initially hidden */
+    position: fixed; /* Fixed position */
+    bottom: 30px; /* Distance from the bottom */
+    right: 30px; /* Distance from the right */
+    background-color: #333; /* Background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding */
+    cursor: pointer; /* Pointer cursor on hover */
+    z-index: 1000; /* Ensure it stays above other elements */
+}
+
+.back-to-top:hover {
+    background-color: #555; /* Darker background on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
