@@ -38,13 +38,31 @@ nav ul li a {
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 2rem;
 }
 
 .section {
     padding: 0rem 0;
+}
+
+.social-icons {
+    margin-top: 1rem; /* Space above the icons */
+}
+
+.social-icons a {
+    margin: 0 10px; /* Space between icons */
+}
+
+.social-icon {
+    width: 30px; /* Set desired width */
+    height: 30px; /* Set desired height */
+    transition: transform 0.2s; /* Smooth scaling effect */
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Scale up icon on hover */
 }
 
 h1, h2 {
